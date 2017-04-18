@@ -1,5 +1,6 @@
 body {
   background-color: #1c1905;
+  margin: 0px;
 }
 ul{
   background-color: #c93c26;
@@ -9,14 +10,15 @@ li{
   display: inline-block;
   padding: 20px;
   list-style: none;
+  margin-left: 35px;
 }
 a{
   color: whitesmoke;
+  font-size: 18px;
 }
 a:hover{
   color: green;
 }
-
 /*panda*/
 #img {
   margin-top: 20px;
@@ -28,6 +30,7 @@ a:hover{
 .panda {
   width: 200px;
   height: 200px;
+  border: solid 5px #575757;
 }
 /*barra de botones*/
 .input {
@@ -48,6 +51,7 @@ a:hover{
 /*texto*/
 #text {
   text-align: center;
+  margin-left: 60px;
 }
 #texto-izquierda {
   margin-top: 30px;
@@ -64,8 +68,10 @@ a:hover{
   text-align: left;
 }
 span{
+  color: white;
+  font-size: 30px;
   position: absolute;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
   cursor: pointer;
 }

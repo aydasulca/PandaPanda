@@ -1,9 +1,4 @@
 var restaurarImg= document.getElementById('restaurar');
-var img3= document.getElementsByClassName('panda');
-var img= document.getElementsByClassName('img-panda');
-var extincion = document.getElementById('extincion');
-
-
 restaurarImg.onclick=function(){
 var img= document.getElementsByClassName('img-panda');
 for (var i = 0; i < img.length; i++) {
@@ -13,21 +8,23 @@ for (var i = 0; i < img.length; i++) {
  }
 }
 
+var extincion = document.getElementById('extincion');
 extincion.onclick=function(){
-  var textIz= document.getElementById('texto-izquierda');
-  if(textIz.style.display === 'none'){
-      textIz.style.display = 'inline-block';
-  }else {
-    textIz.style.display = 'none';
+  var textDe= document.getElementById('texto-derecha');
+  if(textDe.style.visibility === 'visible'){
+      textDe.style.visibility = 'hidden';
+  }else{
+    textDe.style.visibility = 'visible';
   }
 }
 
+
 var origen= document.getElementById('origen');
 origen.onclick=function(){
-  var textDe=document.getElementById('texto-derecha');
-  if(textDe.style.display === 'none'){
-    textDe.style.display = 'inline-block';
+  var textIz=document.getElementById('texto-izquierda');
+  if(textIz.style.visibility == 'visible'){
+    textIz.style.visibility = 'hidden';
   }else {
-    textDe.style.display = 'none';
+    textIz.style.visibility = 'visible';
   }
 }
